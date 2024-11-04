@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Merriweather, sans-serif;
+}
+
+/* header styling */
+header.nav-container {
+  width: 100%;
+  background-color: #ffe5cf;
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+header.nav-container .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 5rem;
+}
+
+header.nav-container .logo img {
+  width: 5vw;
+}
+
+header.nav-container .logo .title {
+  font-family: "Playfair Display", system-ui;
+}
+
+header.nav-container .logo .title a {
+  text-decoration: none;
+  color: #2d3e50;
+}
+
+header.nav-container .nav-list ul {
+  padding-inline: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+header.nav-container .nav-list li {
+  list-style-type: none;
+}
+
+header.nav-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #557c56;
+  transition: all 0.3s ease-in-out;
+}
+
+header.nav-container .nav-list li:hover a {
+  background-color: #557c56;
+  color: #ffe5cf;
+}
+
+header.nav-container .bars {
+  display: none;
+  padding-inline: 3rem;
+}
+
+header.nav-container .bars button {
+  border: none;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* end of header styling */
+/* content styling */
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+#trending {
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #33372c;
+  text-align: center;
+}
+
+#trending img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: 0 15%;
+}
+
+#trending > h2 + p {
+  padding-inline: 10rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+.trending-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.trending-items section {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+}
+
+.trending-items section img {
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.trending-items section .details {
+  align-self: flex-end;
+}
+
+.trending-items section .details a {
+  color: #ff885b;
+}
+
+.card {
+  box-shadow: 3px 6px 6px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 25px;
+  text-align: justify;
+}
+
+#recipe {
+  background-color: #ff885b;
+  color: #ffe5cf;
+  display: flex;
+  flex-direction: row;
+  padding-inline: 5rem;
+  padding-block: 3rem;
+  gap: 5rem;
+  align-items: center;
+}
+
+#recipe img {
+  height: 5%;
+  max-width: 30%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#recipe .information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#recipe h3 {
+  font-size: 5rem;
+}
+
+#recipe .description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#recipe section.ingredients,
+#recipe section.cook-steps {
+  line-height: 2rem;
+}
+
+#subscribes {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 5rem;
+  padding-block: 5rem;
+  gap: 2rem 0;
+}
+
+#subscribes form {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#subscribes input {
+  width: 30%;
+  padding: 0.5rem;
+}
+
+#subscribes button[type="submit"] {
+  height: 2.25rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff885b;
+  color: white;
+  border: none;
+  border-radius: 100px;
+}
+
+#subscribes button[type="submit"]:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* end of content styling */
+/* aside styling */
+aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+aside .meet-chef {
+  height: 3rem;
+  display: flex;
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #2d3e50;
+}
+
+aside .meet-chef button {
+  font-size: 2rem;
+  color: #ffe5cf;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+aside .meet-chef button:hover {
+  color: #ff885b;
+}
+
+aside .chef-details {
+  background-color: #2d3e50;
+  color: #ffe5cf;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 3rem;
+  gap: 3rem;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
+}
+
+aside .chef-details .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+aside .chef-details img {
+  width: 10rem;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+aside .hidden {
+  width: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0s ease-out, visibility 0s ease-out;
+}
+
+/* end of aside styling */
+/* footer styling */
+footer {
+  display: flex;
+  justify-content: center;
+  padding-block: 25px;
+  width: 100%;
+  text-align: center;
+  background-color: #ffe5cf;
+  color: #33372c;
+}
+
+footer p::selection {
+  color: #ffe5cf;
+  background-color: #33372c;
+}
+/* end footer styling */
+
+/* media responsive */
+@media screen and (max-width: 1024px) {
+  header.nav-container {
+    gap: 10rem;
+  }
+
+  header.nav-container .logo img {
+    width: 50px;
+  }
+
+  header.nav-container .logo .title {
+    display: none;
+  }
+
+  header.nav-container .bars {
+    display: flex;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe5cf;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 10;
+    padding: 1rem 0;
+  }
+
+  .nav-list li {
+    padding: 0.75rem 0;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  #trending {
+    flex-direction: column;
+  }
+
+  #recipe h3 {
+    font-size: 3rem;
+  }
+
+  #recipe .information .description {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  #trending .trending-items {
+    flex-direction: column;
+    gap: 5rem;
+    padding-inline: 10rem 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #recipe {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #recipe h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #recipe h3 {
+    font-size: 3rem;
+  }
+
+  #recipe img {
+    max-width: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #recipe .information .description {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #trending .trending-items {
+    padding-inline: 2rem 2rem;
+  }
+
+  aside {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 75%;
+    padding-inline: 0 0;
+    margin: 0 auto;
+    padding-block: 2rem;
+  }
+
+  aside .meet-chef {
+    display: none;
+  }
+
+  aside .hidden {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0s ease-out, visibility 0s ease-out;
+  }
+
+  aside .chef-details {
+    background-color: #2d3e50;
+    color: #ffe5cf;
+    width: 100%;
+    padding-block: 3rem;
+    padding-inline: 3rem;
+    gap: 3rem;
+    border-radius: 1rem;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header.nav-container .logo {
+    padding-inline: 2rem;
+  }
+
+  header.nav-container .bars {
+    padding-inline: 1rem;
+  }
+
+  header.nav-container .bars {
+    display: flex;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nav-list li {
+    padding: 0rem 0rem;
+  }
+
+  #trending > h2 + p {
+    padding-inline: 2rem;
+  }
+
+  #recipe {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #recipe img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #recipe .information h2 {
+    font-size: 1rem;
+  }
+
+  #recipe .information h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  #recipe .information {
+    align-items: center;
+  }
+
+  #subscribes form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #subscribes form input {
+    width: 90%;
+  }
+
+  aside {
+    padding-block: 0;
+  }
+
+  aside .chef-details {
+    border-radius: 0;
+  }
+}
+/* end of media responsive */

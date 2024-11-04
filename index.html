@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/icon.png" type="image/png" />
+    <title>Dicooking</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- end of css -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end of fonts -->
+    <!-- icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- end icons link -->
+  </head>
+  <body>
+    <header class="nav-container">
+      <div class="logo">
+        <a href="#"><img src="assets/img/logo.png" alt="Dicooking" /></a>
+        <h1 class="title"><a href="#">Dicooking</a></h1>
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="body">Home</a></li>
+          <li><a href="#trending">Trending</a></li>
+          <li><a href="#recipe">Recipe</a></li>
+          <li><a href="#subscribes">Subscribes</a></li>
+        </ul>
+      </nav>
+      <div class="bars">
+        <button id="burger"><i class="fas fa-bars"></i></button>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <article id="trending">
+          <img
+            src="assets/img/trendingfood.jpg"
+            alt="trending food"
+            title="Photo by Ash Craig (pexels.com)"
+          />
+          <h2>Trending Foods</h2>
+          <p>
+            Stay updated with all the latest food trends. Whether it's trending
+            on TikTok or making waves in restaurants across the country, we’ve
+            got the newest recipes and techniques you need to know.
+          </p>
+          <div class="trending-items">
+            <section class="card">
+              <img
+                src="assets/img/cromboloni.webp"
+                alt="Cromboloni"
+                title="This Image is AI Generated"
+              />
+              <h3>Cromboloni</h3>
+              <p>
+                Cromboloni are layered, spiral-shaped pastries similar to
+                croissants, often topped with various flavors like chocolate,
+                matcha, or fruit, known for their crispy texture and visual
+                appeal.
+              </p>
+              <p class="details"><a href="#">see recipe</a></p>
+            </section>
+            <section class="card">
+              <img
+                src="assets/img/croffle.webp"
+                alt="Croffle"
+                title="This Image is AI Generated"
+              />
+              <h3>Croffle</h3>
+              <p>
+                A croffle is a delightful fusion of a croissant and a waffle,
+                where buttery, flaky croissant dough is pressed in a waffle
+                iron, resulting in a crisp, golden exterior with a soft, layered
+                interior.
+              </p>
+              <p class="details"><a href="#">see recipe</a></p>
+            </section>
+            <section class="card">
+              <img
+                src="assets/img/sushi.webp"
+                alt="Sushi"
+                title="This Image is AI Generated"
+              />
+              <h3>Sushi</h3>
+              <p>
+                Sushi is a traditional Japanese dish made of vinegared rice
+                paired with various ingredients like cooked fish, vegetables,
+                and often wrapped in seaweed or served as bite-sized rolls.
+              </p>
+              <p class="details"><a href="#">see recipe</a></p>
+            </section>
+          </div>
+        </article>
+        <article id="recipe">
+          <img
+            src="assets/img/mashed-potato.webp"
+            alt="mashed-potato"
+            title="This Image is AI Generated"
+          />
+          <div class="information">
+            <h2>Recipe of The Day</h2>
+            <h3>Mashed Potato</h3>
+            <div class="description">
+              <section class="ingredients">
+                <p>Ingredients:</p>
+                <ul>
+                  <li>Potatoes</li>
+                  <li>Butter</li>
+                  <li>Milk</li>
+                  <li>Salt</li>
+                  <li>Pepper</li>
+                </ul>
+              </section>
+              <section class="cook-steps">
+                <p>How to Cook:</p>
+                <ol>
+                  <li>Boil potatoes</li>
+                  <li>Mash with butter and milk</li>
+                  <li>Add salt and pepper</li>
+                  <li>Serve hot</li>
+                </ol>
+              </section>
+            </div>
+          </div>
+        </article>
+        <article id="subscribes">
+          <h2>Subscribes</h2>
+          <p>
+            Dicooking provides subscribers with recipes, tips, and inspiration
+            to elevate everyday cooking. Whether you're preparing simple
+            weeknight dinners or festive holiday feasts, our carefully tested
+            and refined recipes are designed to suit home cooks of all skill
+            levels. Subscribe today for full access.
+          </p>
+          <form action="#">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="youremail@mail.com"
+              autocomplete="on"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </article>
+      </div>
+      <aside>
+        <div class="meet-chef">
+          <button id="meet-chef">
+            <i class="fas fa-concierge-bell"></i>
+          </button>
+        </div>
+        <div id="chef-details" class="chef-details hidden">
+          <h2>Meet Our Chef!</h2>
+          <div class="profile">
+            <img
+              src="assets/img/chef.webp"
+              alt="Chef Photo"
+              title="This Image is AI Generated"
+            />
+            <h3>Gugun Ramsay</h3>
+            <p>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </p>
+            <small>5/5</small>
+            <q>Make food, make memories.</q>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer><p>Dicoding Submission Task 2024. All Rights Reserved</p></footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
